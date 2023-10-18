@@ -1,0 +1,15 @@
+region                   = "eu-west-3"
+db_instance_identifier   = "tf-db"
+rds_storage_type         = "gp2"
+allocated_storage        = 20
+db_username              = "admin"
+db_password              = "password"
+rds_publicly_accessible  = false
+security_group_name      = "rds-sg"
+security_group_cidr      = "0.0.0.0/0"
+rds_engine               = "mysql"
+rds_engine_version       = "8.0.28"
+rds_instance_class       = "db.t3.micro"
+rds_parameter_group_name = "default.mysql8.0"
+rds_skip_final_snapshot  = true
+rds_option_group_name = "default:mysql-8-0"
